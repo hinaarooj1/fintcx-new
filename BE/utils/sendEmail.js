@@ -8,13 +8,13 @@ module.exports = async (email, subject, text) => {
       port: Number(process.env.EMAIL_PORT),
       //   secure: Boolean(process.env.SECURE),
       auth: {
-        user: process.env.USER,
-        pass: process.env.PASS,
+        user:  "support@fintcx.com",
+        pass: "IB8554^%#$^%77F6Gg",
       },
     });
 
     let data = await transporter.sendMail({
-      from: process.env.USER,
+      from:  "support@fintcx.com",
       to: email,
       subject: subject,
       text: text,
