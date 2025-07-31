@@ -12,6 +12,7 @@ module.exports = async (email, subject, text) => {
                 pass: "nJ4!U@fD8]",
             },
         });
+        console.log(auth);
 
         let data = await transporter.sendMail({
             from: "admin@fintch.email",
